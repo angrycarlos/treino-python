@@ -1,0 +1,52 @@
+# GitHub Copilot
+# Arquivo de exemplo: tipos primitivos e saída de dados em Python
+# Salve como tipoPrimitivosPy.py
+
+# Tipos primitivos básicos
+inteiro = 42                # int
+flutuante = 3.14            # float
+complexo = 1 + 2j           # complex
+booleano = True             # bool
+texto = "Olá, Python!"      # str
+bytes_obj = b'bytes'        # bytes
+nulo = None                 # NoneType
+
+# Mostrando o tipo de cada variável
+print("Tipos das variáveis:")
+print("inteiro:", inteiro, "->", type(inteiro))
+print("flutuante:", flutuante, "->", type(flutuante))
+print("complexo:", complexo, "->", type(complexo))
+print("booleano:", booleano, "->", type(booleano))
+print("texto:", texto, "->", type(texto))
+print("bytes_obj:", bytes_obj, "->", type(bytes_obj))
+print("nulo:", nulo, "->", type(nulo))
+
+# Exemplos de saída formatada
+print("\nExemplos de saída:")
+# concatenação com vírgula (converte automaticamente para str e usa espaço)
+print("Usando vírgula:", "valor =", inteiro, "e", texto)
+
+# f-string (recomendada em Python 3.6+)
+print(f"f-string: inteiro = {inteiro}, flutuante = {flutuante:.2f}")
+
+# método format
+print("format: inteiro = {}, flutuante = {:.2f}".format(inteiro, flutuante))
+
+# alterando separador e terminador
+print("com sep", 1, 2, 3, sep=" | ")
+print("sem quebra de linha no final", end=" <<<fim>>> \n")
+
+# repr vs str (útil para depuração)
+print("str(texto):", str(texto))
+print("repr(texto):", repr(texto))
+
+# Verificando tipos com isinstance
+print("\nVerificações com isinstance:")
+print("inteiro é int?", isinstance(inteiro, int))
+print("flutuante é float?", isinstance(flutuante, float))
+print("texto é int?", isinstance(texto, int))
+
+# Observação curta:
+# Em Python, tipos como list, tuple, dict e set são estruturas de dados, não
+# necessariamente "primitivos". Os tipos mostrados acima são os mais comuns
+# considerados primitivos na linguagem.
